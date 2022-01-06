@@ -1,0 +1,128 @@
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: bisque;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: turquoise;
+    padding-bottom: 0.5rem;
+}
+.discription{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+.personal-details{
+    color: white;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+.skill-progress-css{
+    width: 80%;
+}
+.skill-progress-javascript{
+    width: 50%;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.left-ele{
+    float: left;
+    text-align: justify;
+    white-space: normal;
+}
+.right-ele{
+    float: right;
+    text-align: center;
+    white-space: normal;
+}
+.social-media{
+    padding-left: 2rem;
+    font-size: larger;
+}
+.fa-linkedin{
+    color: white;
+    width: 20%;
+}
+.fa-github{
+    color: white;
+    width: 20%;
+}
+.fa-facebook{
+    color: white;
+    width: 20%;
+}
+.fa-instagram{
+    color: white;
+    width: 20%;
+}
+
+@media screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
